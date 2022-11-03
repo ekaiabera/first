@@ -1,0 +1,529 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .header_container {
+            width: 100%;
+            display: flex;
+            background-color: #0d5366;
+            position: fixed;
+            z-index: 99;
+            box-shadow: 5px 3px 20px #418ec288;
+        }
+        
+        #header_parent {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logoContainer {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logoContainer:hover {
+            background-color: #167994;
+            transition: 0.5s;
+        }
+        
+        .logoContainer:hover::after {
+            content: "HOME";
+            color: white;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+            background-color: #252525;
+            position: absolute;
+            bottom: -40%;
+            left: 70%;
+        }
+        
+        .face {
+            margin-left: 10px;
+        }
+        
+        .ericafont {
+            position: relative;
+            margin-top: 12px;
+        }
+        
+        .menu_container {
+            margin-left: auto;
+            display: flex;
+            gap: 0.5em;
+            margin-right: 2em;
+        }
+        
+        .header_titles {
+            position: relative;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 0.6em 1.5em;
+            transition: 0.3s;
+        }
+        
+        .header_titles a {
+            font: 12px Verdana, sans-serif;
+            text-decoration: none;
+            color: azure;
+        }
+        
+        .header_titles:hover {
+            border: 1px solid azure;
+            border-radius: 5px;
+            padding: 0.6em 1.5em;
+        }
+        /* INDEXXXX */
+        
+        .indexFlexContent {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        
+        .welcomeMessage {
+            background-color: #64d0eed5;
+            color: #0d5366;
+            font-size: 2.5em;
+            border: 5px dotted #0d5366;
+        }
+        
+        .welcomeMessage:hover {
+            background-color: #0d5366d7;
+            color: #64d0ee;
+            font-size: 2.5em;
+            border: 5px dotted #64d0ee;
+        }
+        
+        .indexMotor img {
+            width: 600px;
+            height: 600px;
+        }
+        /* content ABOUT MYSELF*/
+        
+        .myContent {
+            display: flex;
+            justify-content: space-evenly;
+            color: #0d5366;
+        }
+        
+        .profilePhoto {
+            background-color: #0d5366;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 8px solid rgb(185, 247, 247);
+            margin-top: -15%;
+            margin-left: 15%;
+        }
+        
+        .profilePhoto img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mottoContainer {
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 300px;
+            padding-top: 1.3em;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+        }
+        
+        .motto {
+            width: 90%;
+            margin-left: auto;
+            margin-right: 3%;
+        }
+        
+        .hobbiesContainer {
+            background-color: rgba(195, 255, 255, 0.781);
+            margin-top: 0.5em;
+            padding-top: 1.3em;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+            padding-bottom: 0.8em;
+        }
+        
+        .hobbiesInnerContainer {
+            margin-left: 8%;
+        }
+        
+        .hobbiesList {
+            margin-left: auto;
+            width: 90%;
+        }
+        
+        .personalInformation {
+            width: 60%;
+            min-width: 500px;
+        }
+        
+        .titleName {
+            background-color: rgba(195, 255, 255, 0.781);
+            color: #0d5366;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+        }
+        
+        .titleName h1 {
+            padding: 0.5em 0.5em;
+        }
+        
+        .personlInformationContainer {
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+            margin-top: 8px;
+            padding: 1em;
+        }
+        
+        .personalDetails {
+            width: 40%;
+            margin-left: 10px;
+        }
+        
+        .contactInformation {
+            width: 40%;
+            margin-left: 20px;
+        }
+        
+        .favoritesContainer {
+            max-width: 100%;
+            background-color: rgba(195, 255, 255, 0.781);
+            padding-bottom: 1em;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+            margin-top: 8px;
+            padding-top: 1em;
+        }
+        
+        .favoritesList {
+            min-width: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 2em;
+        }
+        
+        .fave img {
+            border-radius: 10px;
+        }
+        
+        .wholeBody {
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 210px;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+        }
+        
+        .gradientContainer {
+            font-size: 2em;
+            color: #0d5366;
+            padding: 1em;
+        }
+        
+        .gradientContainer h1,
+        .welcomeMessage {
+            text-shadow: 5px 3px 5px #55b9fcd0;
+        }
+        
+        .tiktokVideosContainer,
+        .ericaRandomPics {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        #tiktokVid {
+            width: 300px;
+            display: grid;
+            align-items: center;
+        }
+        
+        .tiktokVid video,
+        .tiktokVidSingingLanscape video,
+        .ericaPics img {
+            border: 1px solid rgb(9, 67, 192);
+            border-radius: 20px;
+            box-shadow: 10px 5px 10px #25252548;
+        }
+        /* FAMILY//////////////////////////////// */
+        
+        .wholeContent {
+            width: 100%;
+            display: grid;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .familyContent {
+            width: 99%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .familyIntro {
+            width: 100%;
+            background-color: rgba(195, 255, 255, 0.781);
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+            color: #0d5366;
+            padding: 1em;
+        }
+        
+        .membersoftheFam {
+            padding: 1em;
+        }
+        
+        .blink {
+            width: 100%;
+        }
+        
+        .blink span {
+            border-radius: 10px;
+            font-size: 50px;
+            animation: blink .5s linear infinite;
+            padding: 0 2em;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+                color: #0d5366;
+            }
+            50% {
+                opacity: 0;
+                color: #0d5366;
+            }
+            100% {
+                opacity: 1;
+                color: #64d0ee;
+            }
+        }
+        
+        .FamMembersProfileWhole {
+            display: grid;
+            gap: 10px;
+        }
+        /* /////////////////////////////////////////// */
+        
+        .famMembersContainer1,
+        .famMembersContainer2,
+        .famMembersContainer3,
+        .famMembersContainer4 {
+            display: flex;
+            width: 99%;
+            gap: 10px;
+        }
+        
+        .famMembers {
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+            color: #0d5366;
+            padding: 1em;
+        }
+        
+        .famMembersPic img {
+            position: relative;
+            border-radius: 50%;
+            margin-left: -10px;
+            box-shadow: 1px 1px 10px #25252548;
+        }
+        
+        .famMembersDetails {
+            margin-left: 50px;
+        }
+        
+        .famMemories {
+            padding: 2em 1em;
+            margin-left: 10px;
+        }
+        
+        .famPicsContainerHolder {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .famPicsContainer {
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+        
+        .famMemoriesImg img {
+            border: 1px solid #64d0ee;
+            border-radius: 10px;
+            box-shadow: 1px 10px 10px #25252548;
+        }
+        /* FRIENDS */
+        
+        .friendsContentContainer {
+            display: grid;
+        }
+        
+        .friendsCover img {
+            width: 99vw;
+        }
+        
+        .friendText {
+            background-color: #0d5366;
+            width: 28%;
+            color: #8FE3CF;
+            font-size: 30px;
+            position: relative;
+            margin: -50px 25px;
+            border: 10px solid rgb(195, 255, 255);
+            border-radius: 10px;
+            padding: 1em 2em;
+        }
+        
+        .friendText span {
+            border-radius: 10px;
+            animation: blink .2s linear infinite;
+        }
+        
+        @keyframes friendText {
+            0% {
+                opacity: 0;
+                color: #0d5366;
+            }
+            50% {
+                opacity: 0;
+                color: #0d5366;
+            }
+            100% {
+                opacity: 1;
+                color: #64d0ee;
+            }
+        }
+        
+        .paragraphAboutFriends {
+            position: relative;
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 70%;
+            margin-left: auto;
+            margin-top: -70px;
+            padding: 1.4em;
+            border-radius: 10px;
+            border: 1px solid #64d0ee;
+        }
+        
+        .titlefriendsText {
+            background-color: #8fd9e3a1;
+            margin-inline: inherit;
+            margin-left: 1em;
+            border: 5px solid rgb(195, 255, 255);
+            border-radius: 10px;
+            padding: 1em 2em;
+        }
+        
+        .friendspicsMain,
+        .friendspicsChurchContainer,
+        .threeandfour,
+        .friendspicsSchoolContainer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .friendspics img {
+            border-radius: 10px;
+            border: 1px solid #0d5366;
+            box-shadow: 10px 5px 10px #25252548;
+        }
+        /* EDUCATIONAL BACKGROUND */
+        
+        .wholeContentContainer {
+            display: flex;
+        }
+        
+        .educCoverPhoto img {
+            width: 100%;
+        }
+        
+        .educInfoContainer {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 20px;
+        }
+        
+        .educTitleText {
+            width: 95%;
+            margin-left: auto;
+            background-color: rgb(69, 179, 230);
+            border: 1px solid rgb(0, 106, 255);
+            border-radius: 30px 0 0 30px;
+            padding-left: 50px;
+        }
+        
+        .educContentContainer {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .educLogo img {
+            border: 1px solid #2525253b;
+            border-radius: 50%;
+        }
+        
+        .eduContainerAnswers {
+            margin-left: 50px;
+        }
+        
+        .educBgContentContainer,
+        .leftSideContainer {
+            background-color: rgba(195, 255, 255, 0.781);
+            width: 55%;
+            position: inherit;
+            margin-left: 1em;
+            border: 1px solid rgb(0, 106, 255);
+            border-radius: 10px;
+            padding: 2em 0;
+        }
+        
+        .levelContainer {
+            background-color: rgb(69, 179, 230);
+            margin-left: 3em;
+            border: 1px solid rgb(0, 106, 255);
+            border-radius: 30px 0 0 30px;
+            padding-left: 50px;
+        }
+        
+        .levelAchievementsContainer {
+            margin-left: 7em;
+            background-color: rgba(195, 255, 255, 0.781);
+        }
+        
+        .titleAchievement,
+        .titleEducationalBackground {
+            margin-left: 1em;
+            padding-bottom: 1.5em;
+        }
